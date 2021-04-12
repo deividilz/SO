@@ -89,7 +89,6 @@ void *functionCount2(){
 void *functionCount3(){
     unsigned long i;
     for(;;){
-
         pthread_mutex_lock( &count_mutex );                 //BLOQUEIA O MUTEX
         pthread_cond_wait( &condition_var2, &count_mutex ); //AGUARDA A CONDIÇÃO 2 SER SINALIZADA
 
